@@ -1,13 +1,14 @@
 
 class Criptografia(object):
 
+
     def criptografia(self, m, e, n):
-        c = (m**e) % n
-        return c
+        return (m**e) % n # c
+
 
     def descriptografia(self, c, d, n):
-        m = c**d % n
-        return m
+        return c**d % n # m
+
 
     def encripta_mensagem(self):
         s = input("Digite a mensagem: \t")
